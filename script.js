@@ -34,10 +34,10 @@ chatForm.addEventListener("submit", async (event) => {
   // Scroll to the bottom of the chat window
   responseContainer.scrollTop = responseContainer.scrollHeight;
 
-  // Display a temporary "I'm thinking..." message
+  // Display a temporary loading message
   const thinkingMessage = document.createElement("div");
   thinkingMessage.classList.add("msg", "ai"); // Add classes for styling
-  thinkingMessage.textContent = "I'm thinking...";
+  thinkingMessage.textContent = "Hmm...";
   responseContainer.appendChild(thinkingMessage);
 
   try {
@@ -63,7 +63,7 @@ chatForm.addEventListener("submit", async (event) => {
     // Add the AI's response to the conversation history
     conversationHistory.push({ role: "assistant", content: aiResponse });
 
-    // Replace the "I'm thinking..." message with the AI's response
+    // Replace the loading message with the AI's response
     thinkingMessage.textContent = aiResponse;
 
     // Scroll to the bottom of the chat window
@@ -71,6 +71,6 @@ chatForm.addEventListener("submit", async (event) => {
   } catch (error) {
     console.error("Error fetching data from the API:", error); // Log the error
     thinkingMessage.textContent =
-      "Something went wrong. Please try again later."; // Show a user-friendly message
+      "Hmm... Something went wrong. Please try asking me again later."; // Show a user-friendly message
   }
 });

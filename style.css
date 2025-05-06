@@ -32,18 +32,29 @@ body {
   color: #ff003b; /* L'Oréal red for branding */
 }
 
+/* Logo styling */
+.site-logo {
+  max-width: 150px; /* Adjust size as needed */
+  margin-bottom: 20px; /* Add spacing below the logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the logo */
+}
+
 /* chat window */
 .chatbox {
-  margin: 40px 0;
+  margin: 20px 0; /* Reduced margin for better use of space */
 }
 
 .chat-window {
-  height: 360px;
+  height: 50vh; /* Dynamic height based on viewport */
+  max-height: 600px; /* Maximum height for larger screens */
+  min-height: 300px; /* Minimum height for smaller screens */
   border: 2px solid #e3a535; /* Gold border for premium feel */
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
-  overflow-y: auto;
+  overflow-y: auto; /* Enable scrolling for overflow */
   background: #ffffff; /* White background for readability */
   white-space: pre-line;
   display: flex;
