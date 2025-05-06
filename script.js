@@ -1,7 +1,7 @@
 // Get references to the DOM elements
 const chatForm = document.getElementById('chatForm');
 const userInput = document.getElementById('userInput');
-const responseContainer = document.getElementById('response');
+const responseContainer = document.getElementById('chatWindow');
 
 // Initialize an array to store the conversation history
 let conversationHistory = [
