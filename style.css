@@ -34,11 +34,13 @@ body {
 
 /* Logo styling */
 .site-logo {
-  max-width: 150px; /* Adjust size as needed */
-  margin-bottom: 20px; /* Add spacing below the logo */
+  width: 30vw; /* Set width to 20% of the viewport width */
+  min-width: 150px; /* Ensure it doesn't shrink too small */
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
-  margin-right: auto; /* Center the logo */
+  margin-right: auto;
+  
 }
 
 /* chat window */
@@ -148,7 +150,7 @@ body {
 
 /* footer */
 .site-footer {
-  margin: 60px 0 40px;
+  margin: 10px 0 40px;
   text-align: center;
   font-size: 14px;
   color: #666666;
