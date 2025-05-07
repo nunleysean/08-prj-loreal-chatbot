@@ -40,7 +40,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 /* chat window */
@@ -168,4 +167,46 @@ body {
 
 .site-footer a:hover {
   color: #e3a535; /* Gold hover effect */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .page-wrapper {
+    width: 100%; /* Use full width on smaller screens */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .site-header {
+    padding-top: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .site-title {
+    font-size: 20px; /* Slightly smaller font size for the title */
+  }
+
+  .site-logo {
+    width: 40vw; /* Adjust logo size for smaller screens */
+    min-width: 100px; /* Ensure it doesn't shrink too small */
+  }
+
+  .chat-window {
+    height: 70vh; /* Increased height for better usability on smaller screens */
+    font-size: 16px; /* Slightly smaller font size for readability */
+  }
+
+  .chat-form input {
+    font-size: 16px; /* Adjust input font size */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .chat-form button {
+    width: 40px; /* Adjust button size */
+    height: 40px;
+    font-size: 16px; /* Adjust button font size */
+  }
+
+  .site-footer {
+    font-size: 12px; /* Smaller font size for footer */
+    margin: 20px 0; /* Reduce margin for smaller screens */
+  }
 }
